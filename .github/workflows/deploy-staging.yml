@@ -9,3 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     if: contains(github.event.pull_request.labels.*.name, 'stage')
+    steps:
+      - name: 'Print'
+      - run: echo "$GITHUB_TOKEN"
